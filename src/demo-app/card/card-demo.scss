@@ -1,0 +1,47 @@
+.demo-card-container {
+  display: flex;
+  flex-flow: column nowrap;
+
+  .content-center {
+      text-align:center !important;
+  }
+
+  md-card {
+    margin: 0 16px 16px 0;
+    width: 350px;
+  }
+
+  img {
+    /*background-color: gray;*/
+  }
+  h3{
+      a{
+          color: #444444;
+          display: block;  
+         text-decoration: none;
+      }
+
+      a:hover{
+          color: #37dd11;
+          display: block;  
+         text-decoration: none;
+      }
+  }
+  a{
+          color: #37dd11;
+          display: block;        
+      }
+}
+
+.demo-card-blue {
+  background-color: #b0becc;
+
+  md-card-actions {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}
+
+

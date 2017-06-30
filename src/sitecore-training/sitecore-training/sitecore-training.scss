@@ -1,0 +1,83 @@
+body {
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+
+  // Helps fonts on OSX looks more consistent with other systems
+  // Isn't currently in button styles due to performance concerns
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  md-sidenav {
+    min-width: 15%;
+
+    [md-button] {
+      width: 100%;
+      position: relative;
+      bottom: 0;
+      margin: 24px 0;
+    }
+  }
+
+  .demo-content {
+    padding: 32px;
+  }
+
+  md-toolbar {
+    md-icon {
+      cursor: pointer;
+    }
+
+    .demo-toolbar {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+// begin changes 
+.demo-card-container {
+  display: flex;
+  flex-flow: column nowrap;
+
+  .content-center {
+      text-align:center !important;
+  }
+
+  md-card {
+    margin: 0 16px 16px 0;
+    width: 350px;
+  }
+  
+  h3{
+      a{
+          color: #444444;
+          display: block;  
+         text-decoration: none;
+      }
+
+      a:hover{
+          color: #37dd11;
+          display: block;  
+         text-decoration: none;
+      }
+  }
+  a{
+          color: #37dd11;
+          display: block;        
+      }
+}
+
+footer{
+      background-color: #333333;
+      color:white;
+}
+
+//  end changes
+
+  }
+

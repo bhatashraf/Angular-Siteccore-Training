@@ -1,0 +1,34 @@
+<div class="demo-card-container">
+    <md-card class="hide-mobile widthCentPercent">
+        <h1> Sitecore Training</h1>
+    </md-card>
+    <!-- changes begin-->
+     
+        <div>
+            <div class="col-md-8">
+                <h2>Sitecore Training in India, Our Core Expertise, Your Team, Enablement!</h2>
+                <md-card-content>
+                    <p><strong>Choose from various Sitecore training courses targeted at different Sitecore user group.</strong></p>
+                    <p><strong>You are always welcome to connect to us for customized Sitecore training course.</strong></p>
+                    <p>More than 100 Sitecore developers, marketers and administrators training course conducted so far. &nbsp;500+ Sitecore enabled developers is testimony to our set standards. A helping hand is just a call away, and a friend of your is eager to help.</p>
+                </md-card-content>
+             </div>
+        </div>
+    <!-- end changes-->
+     <div class="cardlist" flex="100%" class="col-md-12">
+        <div class=" col-lg-8  col-md-8 col-sm-6 col-xs-12 marginbottom" *ngFor="let training of sitecoreTrainings">
+            <div>
+               <md-card layout="column" class="widthCentPercent" >
+                      <img src="{{training.imageSrc}}">
+                      <h3><a href="{{training.link}}">{{training.title}}</a></h3>
+                      <md-card-content>
+                          <p>{{training.summary}}</p>
+                          <p>{{training.summary}}</p>
+                      </md-card-content>
+                  </md-card>    
+                </div>           
+          </div>   
+    </div>
+
+
+</div>
